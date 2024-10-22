@@ -59,7 +59,10 @@
 							class="column__task"
 						>
 							<div class="task">
-								<div class="task__user">
+								<div
+									v-if="task.user"
+									class="task__user"
+								>
 									<div class="task__avatar">
 										<img
 											:src="getImage(task.user.avatar)"
